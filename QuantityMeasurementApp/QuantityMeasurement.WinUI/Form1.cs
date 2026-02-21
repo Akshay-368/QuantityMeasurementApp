@@ -34,18 +34,7 @@ public partial class Form1 : Form
             MessageBox.Show("Input: Please enter valid numeric values in Feet.", "Validation Error");
         }
 
-        if (double.TryParse(txtValue1.Text, out double v1) && double.TryParse(txtValue2.Text, out double v2))
-        {
-            Inches i1 = new Inches(v1);
-            Inches i2 = new Inches(v2);
-
-            bool result = i1.Equals(i2);
-            lblResult.Text = $"Inches Result: {result}";
-        }
-        else
-        {
-            MessageBox.Show("Input: Please enter valid numeric values in Inches.", "Validation Error");
-        }
+        
     }
 
 
