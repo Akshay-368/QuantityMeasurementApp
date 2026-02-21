@@ -13,6 +13,7 @@ partial class Form1
     private System.Windows.Forms.Button btnCompare;
     private System.Windows.Forms.Label lblResult;
     private System.Windows.Forms.Label lblTitle;
+    private System.Windows.Forms.ComboBox cmbUnitSelector;
 
 
     /// <summary>
@@ -46,10 +47,11 @@ partial class Form1
         this.btnCompare = new System.Windows.Forms.Button();
         this.lblResult = new System.Windows.Forms.Label();
         this.lblTitle = new System.Windows.Forms.Label();
+        this.cmbUnitSelector = new System.Windows.Forms.ComboBox();
         this.SuspendLayout() ;
 
         // lblTitle
-        this.lblTitle.Text = "Enter Feet Values to Compare:";
+        this.lblTitle.Text = "Select Unit and Enter Values : ";
         this.lblTitle.Location = new System.Drawing.Point(30, 20);
         this.lblTitle.AutoSize = true;
 
@@ -80,10 +82,20 @@ partial class Form1
         this.Controls.Add(this.txtValue2);
         this.Controls.Add(this.btnCompare);
         this.Controls.Add(this.lblResult);
-        this.Text = "Quantity Measurement App - UC1";
+        this.Text = "Quantity Measurement App - UC1 and UC2";
         this.ResumeLayout(false);
         this.PerformLayout();
         
+        
+        // Configuring cmbUnitSelector
+        this.cmbUnitSelector.Location = new System.Drawing.Point(200, 50); // Next to textboxes
+        this.cmbUnitSelector.Size = new System.Drawing.Size(100, 23);
+        this.cmbUnitSelector.Items.AddRange(new object[] { "Feet", "Inches" });
+        this.cmbUnitSelector.SelectedIndex = 0; // Default to Feet
+        // This line prevents the user from typing. It makes the box "Select Only."
+        this.cmbUnitSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
+        this.Controls.Add(this.cmbUnitSelector);
         
     }
 

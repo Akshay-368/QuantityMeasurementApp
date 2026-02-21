@@ -28,24 +28,22 @@ dotnet add QuantityMeasurement.Tests/QuantityMeasurement.Tests.csproj reference 
 dotnet test BusinessLogic/QuantityMeasurementApp.sln
 */
 
+namespace QuantityMeasurement.EntryPoint;
 using QuantityMeasurement.Core;
 using QuantityMeasurement.Units;
-namespace QuantityMeasurement.EntryPoint;
+using QuantityMeasurement.Interfaces;
+using QuantityMeasurement.FactoryPattern;
+using QuantityMeasurement.Menu;
 
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(" Quantity Measurement Console Mode ");
-        Console.Write("Enter first value (Feet): ");
-        double val1 = double.Parse(Console.ReadLine() ?? "0");
-
-        Console.Write("Enter second value (Feet): ");
-        double val2 = double.Parse(Console.ReadLine() ?? "0");
-
-        Feet f1 = new Feet(val1);
-        Feet f2 = new Feet(val2);
-
-        Console.WriteLine($"Result: {f1.Equals(f2)}");
+        // Using the Factory to create an instance of Menu as an IMenu
+        IMenu menu = Factory<IMenu, MenuClass>.CreateObject(); 
+        
+        // Start the logic of the menu
+        menu.StartMenu();
     }
 }
+
