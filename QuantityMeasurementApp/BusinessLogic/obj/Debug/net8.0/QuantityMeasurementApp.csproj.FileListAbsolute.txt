@@ -1,0 +1,14 @@
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\bin\Debug\net8.0\QuantityMeasurementApp.exe
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\bin\Debug\net8.0\QuantityMeasurementApp.deps.json
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\bin\Debug\net8.0\QuantityMeasurementApp.runtimeconfig.json
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\bin\Debug\net8.0\QuantityMeasurementApp.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\bin\Debug\net8.0\QuantityMeasurementApp.pdb
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\QuantityMeasurementApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\QuantityMeasurementApp.AssemblyInfoInputs.cache
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\QuantityMeasurementApp.AssemblyInfo.cs
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\QuantityMeasurementApp.csproj.CoreCompileInputs.cache
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\QuantityMeasurementApp.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\refint\QuantityMeasurementApp.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\QuantityMeasurementApp.pdb
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\QuantityMeasurementApp.genruntimeconfig.cache
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\BusinessLogic\obj\Debug\net8.0\ref\QuantityMeasurementApp.dll
