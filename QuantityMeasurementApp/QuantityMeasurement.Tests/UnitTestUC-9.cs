@@ -12,7 +12,7 @@ namespace QuantityMeasurement.Tests
         private const double Epsilon = 1e-6;
 
         // --------------------------------------------------
-        // 1️⃣ SAME UNIT EQUALITY
+        // 1️ SAME UNIT EQUALITY
         // --------------------------------------------------
 
         [Test]
@@ -40,7 +40,7 @@ namespace QuantityMeasurement.Tests
         }
 
         // --------------------------------------------------
-        // 2️⃣ CROSS UNIT EQUALITY
+        // 2️ CROSS UNIT EQUALITY
         // --------------------------------------------------
 
         [Test]
@@ -70,7 +70,7 @@ namespace QuantityMeasurement.Tests
         }
 
         // --------------------------------------------------
-        // 3️⃣ CATEGORY SAFETY
+        // 3️ CATEGORY SAFETY
         // --------------------------------------------------
 
         [Test]
@@ -95,7 +95,7 @@ namespace QuantityMeasurement.Tests
         }
 
         // --------------------------------------------------
-        // 4️⃣ ZERO / NEGATIVE / LARGE VALUES
+        // 4️ ZERO / NEGATIVE / LARGE VALUES
         // --------------------------------------------------
 
         [Test]
@@ -120,7 +120,7 @@ namespace QuantityMeasurement.Tests
         }
 
         // --------------------------------------------------
-        // 5️⃣ CONVERSION TESTS
+        // 5️ CONVERSION TESTS
         // --------------------------------------------------
 
         [Test]
@@ -173,7 +173,7 @@ namespace QuantityMeasurement.Tests
         }
 
         // --------------------------------------------------
-        // 6️⃣ ADDITION (IMPLICIT TARGET)
+        // 6️ ADDITION (IMPLICIT TARGET)
         // --------------------------------------------------
 
         [Test]
@@ -205,7 +205,7 @@ namespace QuantityMeasurement.Tests
         }
 
         // --------------------------------------------------
-        // 7️⃣ ADDITION (EXPLICIT TARGET)
+        // 7️ ADDITION (EXPLICIT TARGET)
         // --------------------------------------------------
 
         [Test]
@@ -231,7 +231,7 @@ namespace QuantityMeasurement.Tests
         }
 
         // --------------------------------------------------
-        // 8️⃣ EDGE CASES
+        // 8️ EDGE CASES
         // --------------------------------------------------
 
         [Test]
