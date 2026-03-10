@@ -1,0 +1,54 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurementApp", "QuantityMeasurementApp.csproj", "{7974F22C-0322-9893-0B58-EF67E60E7AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurement.Tests", "..\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj", "{90B3605F-3FC2-4AD1-8DA8-726AFA002239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurement.Domain", "..\src\Domain\QuantityMeasurement.Domain.csproj", "{D25246A6-3B65-4269-BA82-1ED7A7C4F06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurement.Application", "..\src\Application\QuantityMeasurement.Application.csproj", "{2D8B38C7-C6F0-4592-A461-A829B4838370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurement.Infrastructure", "..\src\Infrastructure\QuantityMeasurement.Infrastructure.csproj", "{B90EEB97-D9C3-4829-97FC-04814EE91DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurement.Web", "..\src\Web\QuantityMeasurement.Web.csproj", "{25F4F5E5-D879-46A8-BBCC-B239C1296DF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7974F22C-0322-9893-0B58-EF67E60E7AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7974F22C-0322-9893-0B58-EF67E60E7AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7974F22C-0322-9893-0B58-EF67E60E7AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7974F22C-0322-9893-0B58-EF67E60E7AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B3605F-3FC2-4AD1-8DA8-726AFA002239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B3605F-3FC2-4AD1-8DA8-726AFA002239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B3605F-3FC2-4AD1-8DA8-726AFA002239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B3605F-3FC2-4AD1-8DA8-726AFA002239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25246A6-3B65-4269-BA82-1ED7A7C4F06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25246A6-3B65-4269-BA82-1ED7A7C4F06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25246A6-3B65-4269-BA82-1ED7A7C4F06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25246A6-3B65-4269-BA82-1ED7A7C4F06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D8B38C7-C6F0-4592-A461-A829B4838370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D8B38C7-C6F0-4592-A461-A829B4838370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D8B38C7-C6F0-4592-A461-A829B4838370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D8B38C7-C6F0-4592-A461-A829B4838370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90EEB97-D9C3-4829-97FC-04814EE91DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90EEB97-D9C3-4829-97FC-04814EE91DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90EEB97-D9C3-4829-97FC-04814EE91DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90EEB97-D9C3-4829-97FC-04814EE91DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F4F5E5-D879-46A8-BBCC-B239C1296DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F4F5E5-D879-46A8-BBCC-B239C1296DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F4F5E5-D879-46A8-BBCC-B239C1296DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F4F5E5-D879-46A8-BBCC-B239C1296DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B333C049-C256-46B5-A5EE-CCC7694D7DC5}
+	EndGlobalSection
+EndGlobal
