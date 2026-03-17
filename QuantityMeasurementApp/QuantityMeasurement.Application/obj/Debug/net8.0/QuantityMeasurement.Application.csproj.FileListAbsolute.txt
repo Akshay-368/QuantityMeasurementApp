@@ -1,0 +1,17 @@
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\bin\Debug\net8.0\QuantityMeasurement.Application.deps.json
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\bin\Debug\net8.0\QuantityMeasurement.Application.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\bin\Debug\net8.0\QuantityMeasurement.Application.pdb
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\bin\Debug\net8.0\QuantityMeasurement.Domain.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\bin\Debug\net8.0\QuantityMeasurement.Domain.pdb
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\QuantityMeasurement.Application.csproj.AssemblyReference.cache
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\QuantityMeasurement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\QuantityMeasurement.Application.AssemblyInfoInputs.cache
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\QuantityMeasurement.Application.AssemblyInfo.cs
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\QuantityMeasurement.Application.csproj.CoreCompileInputs.cache
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\Quantity.CD59B764.Up2Date
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\QuantityMeasurement.Application.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\refint\QuantityMeasurement.Application.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\QuantityMeasurement.Application.pdb
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\obj\Debug\net8.0\ref\QuantityMeasurement.Application.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\bin\Debug\net8.0\QuantityMeasurement.Infrastructure.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\bin\Debug\net8.0\QuantityMeasurement.Infrastructure.pdb
