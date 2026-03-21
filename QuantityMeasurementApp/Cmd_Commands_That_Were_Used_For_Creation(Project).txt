@@ -1,0 +1,1901 @@
+Active code page: 65001
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet new classlib -n QuantityMeasurement.Application
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application\QuantityMeasurement.Application.csproj:
+  Determining projects to restore...
+  Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMe
+  asurement.Application\QuantityMeasurement.Application.csproj (in 93 ms).     
+Restore succeeded.
+
+
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet new classlib -n
+ QuantityMeasurement.Infrastructure
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj:
+  Determining projects to restore...
+  Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMe
+  asurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 78 ms 
+  ).
+Restore succeeded.
+
+
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet new webapi -n QuantityMeasurement.API  
+The template "ASP.NET Core Web API" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\QuantityMeasurement.API.csproj:
+  Determining projects to restore...
+  Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMe
+  asurement.API\QuantityMeasurement.API.csproj (in 1.57 sec).
+Restore succeeded.
+
+
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet sln add Quantit
+yMeasurement.Application/QuantityMeasurement.Application.csproj
+Project `QuantityMeasurement.Application\QuantityMeasurement.Application.csproj` added to the solution.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet sln add Quantit
+yMeasurement.Infrastructure/QuantityMeasurement.Infrastructure.csproj
+Project `QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj` added to the solution.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet sln add Quantit
+yMeasurement.API/QuantityMeasurement.API.csproj
+Project `QuantityMeasurement.API\QuantityMeasurement.API.csproj` added to the solution.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add QuantityMea
+surement.Application reference QuantityMeasurement.Domain
+Could not find project or directory `QuantityMeasurement.Domain`.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add QuantityMeasurement.Application reference Domain                    
+Reference `..\Domain\QuantityMeasurement.Domain.csproj` added to the project.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add QuantityMea
+surement.API reference QuantityMeasurement.Application
+Reference `..\QuantityMeasurement.Application\QuantityMeasurement.Application.csproj` added to the project.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add QuantityMea
+surement.Infrastructure reference Domain
+Reference `..\Domain\QuantityMeasurement.Domain.csproj` added to the project.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add QuantityMea
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add QuantityMeasurement.API reference QuantityMeasurement.Infrastructre
+Could not find project or directory `QuantityMeasurement.Infrastructre`.       
+structure\QuantityMeasurement.Infrastructure.csproj` added to the project.     
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet list reference 
+Could not find any project in `C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\`.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet sln list reference
+Unrecognized command or argument 'reference'.
+
+Description:
+  List all projects in a solution file.
+
+Usage:
+  dotnet sln <SLN_FILE> list [options]
+
+Arguments:
+  <SLN_FILE>  The solution file to operate on. If not specified, the command   
+              will search the current directory for one. [default:
+              C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\]       
+
+Options:
+  --solution-folders  Display solution folder paths.
+  -?, -h, --help      Show command line help.
+
+
+
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet sln list
+Project(s)
+----------
+Domain\QuantityMeasurement.Domain.csproj
+QuantityMeasurement.API\QuantityMeasurement.API.csproj
+QuantityMeasurement.Application\QuantityMeasurement.Application.csproj
+QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj   
+QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>cd QuantityMeasurement
+.API
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API>dotnet list reference
+Project reference(s)
+--------------------
+..\QuantityMeasurement.Application\QuantityMeasurement.Application.csproj      
+..\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API>cd ..
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>cd QuantityMeasurement.Infrastructure
+
+--------------------
+..\Domain\QuantityMeasurement.Domain.csproj
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>cd ..
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>cd QuantityMeasurement.Application
+
+--------------------
+..\Domain\QuantityMeasurement.Domain.csproj
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application>cd ..
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>cd Domain             
+  
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain>dotnet list reference
+There are no Project to Project references in project C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain>cd ..
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet clean 
+Build started 14-03-2026 11:29:19.
+     1>Project "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Quant
+       ityMeasurementApp.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Quant
+       ityMeasurementApp.sln" (1) is building "C:\Users\aksha\OneDrive\Documen 
+       ts\QuantityMeasurementApp\QuantityMeasurement.Tests\QuantityMeasurement 
+       .Tests.csproj" (4) on node 3 (Clean target(s)).
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\CoverletSourceRootsMapp 
+         ing_QuantityMeasurement.Tests".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\testhost.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\testhost.exe".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.dll" 
+         .
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.pdb" 
+         .
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\nunit.engine.dll".      
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\nunit.engine.api.dll".  
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\nunit.engine.core.dll". 
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\testcentric.engine.meta 
+         data.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.deps.json".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.runtimeconfig.json".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.pdb".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Microsoft.VisualStudio. 
+         CodeCoverage.Shim.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Microsoft.TestPlatform. 
+         CoreUtilities.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Microsoft.TestPlatform. 
+         PlatformAbstractions.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Microsoft.VisualStudio. 
+         TestPlatform.ObjectModel.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Microsoft.TestPlatform. 
+         CommunicationUtilities.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Microsoft.TestPlatform. 
+         CrossPlatEngine.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Microsoft.TestPlatform. 
+         Utilities.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Microsoft.VisualStudio. 
+         TestPlatform.Common.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll".   
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll".  
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\nunit.framework.dll".   
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\de\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\es\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\it\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPla 
+         tform.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualS 
+         tudio.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatfo 
+         rm.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStud 
+         io.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestP 
+         latform.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.Visua 
+         lStudio.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestP 
+         latform.CoreUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.Visua 
+         lStudio.TestPlatform.ObjectModel.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\de\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\es\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\it\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPla 
+         tform.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPla 
+         tform.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualS 
+         tudio.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatfo 
+         rm.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatfo 
+         rm.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStud 
+         io.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestP 
+         latform.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestP 
+         latform.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.Visua 
+         lStudio.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestP 
+         latform.CommunicationUtilities.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestP 
+         latform.CrossPlatEngine.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.Visua 
+         lStudio.TestPlatform.Common.resources.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\QuantityMeasurement.Dom 
+         ain.dll".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\bin\Debug\net8.0\QuantityMeasurement.Dom 
+         ain.pdb".
+     1>Project "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Quant 
+       ityMeasurementApp.sln" (1) is building "C:\Users\aksha\OneDrive\Documen 
+       ts\QuantityMeasurementApp\Domain\QuantityMeasurement.Domain.csproj" (5) 
+        on node 5 (Clean target(s)).
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\bin\Debug\net8.0\QuantityMeasurement.Domain.deps.json".     
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.csproj.AssemblyReference.cache".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\bin\Debug\net8.0\QuantityMeasurement.Domain.dll".
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.GeneratedMSBuildEditorConfig.editorconfig".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\bin\Debug\net8.0\QuantityMeasurement.Domain.pdb".
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.AssemblyInfoInputs.cache".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\obj\Debug\net8.0\QuantityMeasurement.Domain.GeneratedMSBuil 
+         dEditorConfig.editorconfig".
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.AssemblyInfo.cs".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\obj\Debug\net8.0\QuantityMeasurement.Domain.AssemblyInfoInp 
+         uts.cache".
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.csproj.CoreCompileInputs.cache".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\obj\Debug\net8.0\QuantityMeasurement.Domain.AssemblyInfo.cs 
+         ".
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\Quantity.8D82B56A.Up2Da 
+         te".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\obj\Debug\net8.0\QuantityMeasurement.Domain.csproj.CoreComp 
+         ileInputs.cache".
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.dll".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\obj\Debug\net8.0\QuantityMeasurement.Domain.dll".
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\refint\QuantityMeasurem 
+         ent.Tests.dll".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\obj\Debug\net8.0\refint\QuantityMeasurement.Domain.dll".    
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.pdb".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\QuantityMeasurement.Tes 
+         ts.genruntimeconfig.cache".
+     5>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\obj\Debug\net8.0\QuantityMeasurement.Domain.pdb".
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\Domain\obj\Debug\net8.0\ref\QuantityMeasurement.Domain.dll".       
+     4>CoreClean:
+         Deleting file "C:\Users\aksha\OneDrive\Documents\QuantityMeasurementA 
+         pp\QuantityMeasurement.Tests\obj\Debug\net8.0\ref\QuantityMeasurement 
+         .Tests.dll".
+     5>Done Building Project "C:\Users\aksha\OneDrive\Documents\QuantityMeasur 
+       ementApp\Domain\QuantityMeasurement.Domain.csproj" (Clean target(s)).   
+     4>Done Building Project "C:\Users\aksha\OneDrive\Documents\QuantityMeasur 
+       ementApp\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj" (C 
+       lean target(s)).
+     1>Done Building Project "C:\Users\aksha\OneDrive\Documents\QuantityMeasur
+       ementApp\QuantityMeasurementApp.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.75
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\Temperat
+ureAbstractSubBaseClass.cs(15,24): warning CS0108: 'Temperature.ConvertTo(Unit 
+)' hides inherited member 'Quantity.ConvertTo(Unit)'. Use the new keyword if h 
+iding was intended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\
+Domain\QuantityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\Temperat 
+ureAbstractSubBaseClass.cs(54,24): warning CS0108: 'Temperature.Divide(double) 
+' hides inherited member 'Quantity.Divide(double)'. Use the new keyword if hid 
+ing was intended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Do 
+main\QuantityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\VolumeAb 
+stractSubBaseClass.cs(18,19): warning CS0108: 'Volume.ConvertTo(Unit)' hides i 
+nherited member 'Quantity.ConvertTo(Unit)'. Use the new keyword if hiding was  
+intended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Qua 
+ntityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\VolumeAb 
+stractSubBaseClass.cs(66,19): warning CS0108: 'Volume.Divide(double)' hides in 
+herited member 'Quantity.Divide(double)'. Use the new keyword if hiding was in 
+tended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Quant 
+ityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\WeightAb 
+stractSubBaseClass.cs(14,19): warning CS0108: 'Weight.ConvertTo(Unit)' hides i 
+nherited member 'Quantity.ConvertTo(Unit)'. Use the new keyword if hiding was  
+intended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Qua 
+ntityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\WeightAb 
+stractSubBaseClass.cs(66,19): warning CS0108: 'Weight.Divide(double)' hides in 
+herited member 'Quantity.Divide(double)'. Use the new keyword if hiding was in 
+tended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Quant 
+ityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\LengthAb 
+stractSubBaseClass.cs(61,19): warning CS0108: 'Length.Divide(double)' hides in 
+herited member 'Quantity.Divide(double)'. Use the new keyword if hiding was in 
+tended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Quant 
+ityMeasurement.Domain.csproj]
+  QuantityMeasurement.Domain -> C:\Users\aksha\OneDrive\Documents\QuantityMeas
+  urementApp\Domain\bin\Debug\net8.0\QuantityMeasurement.Domain.dll
+  QuantityMeasurement.Infrastructure -> C:\Users\aksha\OneDrive\Documents\Quan
+  tityMeasurementApp\QuantityMeasurement.Infrastructure\bin\Debug\net8.0\Quant 
+  ityMeasurement.Infrastructure.dll
+  QuantityMeasurement.Application -> C:\Users\aksha\OneDrive\Documents\Quantit
+  yMeasurementApp\QuantityMeasurement.Application\bin\Debug\net8.0\QuantityMea 
+  surement.Application.dll
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.T
+ests\UnitTestUC-8.cs(154,49): warning CS8625: Cannot convert null literal to n 
+on-nullable reference type. [C:\Users\aksha\OneDrive\Documents\QuantityMeasure 
+mentApp\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.T 
+ests\UnitTestUC-7.cs(155,44): warning CS8625: Cannot convert null literal to n 
+on-nullable reference type. [C:\Users\aksha\OneDrive\Documents\QuantityMeasure 
+mentApp\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.T 
+ests\UnitTestConverionUC-5.cs(165,71): warning CS8625: Cannot convert null lit 
+eral to non-nullable reference type. [C:\Users\aksha\OneDrive\Documents\Quanti 
+tyMeasurementApp\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj]   
+  QuantityMeasurement.Tests -> C:\Users\aksha\OneDrive\Documents\QuantityMeasu
+  rementApp\QuantityMeasurement.Tests\bin\Debug\net8.0\QuantityMeasurement.Tes 
+  ts.dll
+  QuantityMeasurement.API -> C:\Users\aksha\OneDrive\Documents\QuantityMeasure
+  mentApp\QuantityMeasurement.API\bin\Debug\net8.0\QuantityMeasurement.API.dll 
+
+Build succeeded.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\Temperat 
+ureAbstractSubBaseClass.cs(15,24): warning CS0108: 'Temperature.ConvertTo(Unit 
+)' hides inherited member 'Quantity.ConvertTo(Unit)'. Use the new keyword if h 
+iding was intended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\ 
+Domain\QuantityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\Temperat 
+ureAbstractSubBaseClass.cs(54,24): warning CS0108: 'Temperature.Divide(double) 
+' hides inherited member 'Quantity.Divide(double)'. Use the new keyword if hid 
+ing was intended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Do 
+main\QuantityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\VolumeAb 
+stractSubBaseClass.cs(18,19): warning CS0108: 'Volume.ConvertTo(Unit)' hides i 
+nherited member 'Quantity.ConvertTo(Unit)'. Use the new keyword if hiding was  
+intended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Qua 
+ntityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\VolumeAb 
+stractSubBaseClass.cs(66,19): warning CS0108: 'Volume.Divide(double)' hides in 
+herited member 'Quantity.Divide(double)'. Use the new keyword if hiding was in 
+tended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Quant 
+ityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\WeightAb 
+stractSubBaseClass.cs(14,19): warning CS0108: 'Weight.ConvertTo(Unit)' hides i 
+nherited member 'Quantity.ConvertTo(Unit)'. Use the new keyword if hiding was  
+intended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Qua 
+ntityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\WeightAb
+stractSubBaseClass.cs(66,19): warning CS0108: 'Weight.Divide(double)' hides in 
+herited member 'Quantity.Divide(double)'. Use the new keyword if hiding was in 
+tended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Quant 
+ityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Units\LengthAb 
+stractSubBaseClass.cs(61,19): warning CS0108: 'Length.Divide(double)' hides in 
+herited member 'Quantity.Divide(double)'. Use the new keyword if hiding was in 
+tended. [C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\Domain\Quant 
+ityMeasurement.Domain.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.T 
+ests\UnitTestUC-8.cs(154,49): warning CS8625: Cannot convert null literal to n 
+on-nullable reference type. [C:\Users\aksha\OneDrive\Documents\QuantityMeasure 
+mentApp\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.T 
+ests\UnitTestUC-7.cs(155,44): warning CS8625: Cannot convert null literal to n 
+on-nullable reference type. [C:\Users\aksha\OneDrive\Documents\QuantityMeasure 
+mentApp\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj]
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.T 
+ests\UnitTestConverionUC-5.cs(165,71): warning CS8625: Cannot convert null lit 
+eral to non-nullable reference type. [C:\Users\aksha\OneDrive\Documents\Quanti 
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.T 
+ests\UnitTestConverionUC-5.cs(165,71): warning CS8625: Cannot convert null lit 
+eral to non-nullable reference type. [C:\Users\aksha\OneDrive\Documents\Quanti 
+tyMeasurementApp\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj]   
+    10 Warning(s)
+tyMeasurementApp\QuantityMeasurement.Tests\QuantityMeasurement.Tests.csproj]   
+    10 Warning(s)
+    10 Warning(s)
+    0 Error(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.09
+
+Time Elapsed 00:00:05.09
+Time Elapsed 00:00:05.09
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>
+
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>cd QuantityMeasurement.Application
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application>mkdir DTOs
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application>mkdir Interfaces
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application>mkdir Services
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Application>cd ../QuantityMeasurement.Infrastructure
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>mkdir Persistence
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>mkdir Repositories
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>mkdir ExternalServices
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>cd ../QuantityMeasurement.API
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API>mkdir Controllers
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API>mkdir Models
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API>mkdir Configuration
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API>cd ..
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>
+
+
+
+
+
+
+Active code page: 65001
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>cd QuantityMeasurement.Infrastructure
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmp1x2smd.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json 318ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/0.0.1-alpha/3.1.2.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/0.0.1-alpha/3.1.2.json 262ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/3.1.3/6.0.0-preview.6.21352.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/3.1.3/6.0.0-preview.6.21352.1.json 305ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/6.0.0-preview.7.21378.4/7.0.17.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/6.0.0-preview.7.21378.4/7.0.17.json 249ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/7.0.18/10.0.0-preview.3.25171.6.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/7.0.18/10.0.0-preview.3.25171.6.json 250ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json  
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json 256ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json 291ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/10.0.5/microsoft.entityframeworkcore.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/10.0.5/microsoft.entityframeworkcore.10.0.5.nupkg 14ms
+info : Installed Microsoft.EntityFrameworkCore 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore\10.0.5 with content hash 9tNBmK3EpYVGRQLiqP+bqK2m+TD0Gv//4vCzR7ZOgl4FWzCFyOpYdIVka13M4kcBdPdSJcs3wbHr3rmzOqbIMA==.
+info :   GET https://api.nuget.org/v3/vulnerabilities/index.json
+info :   OK https://api.nuget.org/v3/vulnerabilities/index.json 261ms
+info :   GET https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   GET https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info :   OK https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json 370ms
+info :   OK https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json 367ms
+error: NU1202: Package Microsoft.EntityFrameworkCore 10.0.5 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.EntityFrameworkCore 10.0.5 supports: net10.0 (.NETCoreApp,Version=v10.0)
+error: Package 'Microsoft.EntityFrameworkCore' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.     
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpswnqp2.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore.SqlServer' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.   
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/index.json 503ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/0.0.1-alpha/3.1.2.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/0.0.1-alpha/3.1.2.json 351ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/3.1.3/6.0.0-preview.6.21352.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/3.1.3/6.0.0-preview.6.21352.1.json 246ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/6.0.0-preview.7.21378.4/7.0.17.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/6.0.0-preview.7.21378.4/7.0.17.json 258ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/7.0.18/10.0.0-preview.3.25171.6.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/7.0.18/10.0.0-preview.3.25171.6.json 292ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json 297ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/index.json 477ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/10.0.5/microsoft.entityframeworkcore.sqlserver.10.0.5.nupkg       
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/10.0.5/microsoft.entityframeworkcore.sqlserver.10.0.5.nupkg 12ms   
+info : Installed Microsoft.EntityFrameworkCore.SqlServer 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.sqlserver\10.0.5 with content hash /3Ault1Ay6OIEp3ZGGVem4mSWyEOX9e5leUMalGV9aFM57e0xFHAnlhmNaBHYtILkbtkaAErikQuaLqMQb4fww==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+error: NU1202: Package Microsoft.EntityFrameworkCore.SqlServer 10.0.5 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.EntityFrameworkCore.SqlServer 10.0.5 supports: net10.0 (.NETCoreApp,Version=v10.0)
+error: Package 'Microsoft.EntityFrameworkCore.SqlServer' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore.Tools
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmp12sbfq.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore.Tools' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.       
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/index.json 617ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/1.0.0-msbuild1-final/3.1.0.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/1.0.0-msbuild1-final/3.1.0.json 941ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/3.1.1/6.0.0-preview.4.21253.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/3.1.1/6.0.0-preview.4.21253.1.json 353ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/6.0.0-preview.5.21301.9/7.0.15.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/6.0.0-preview.5.21301.9/7.0.15.json 245ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/7.0.16/10.0.0-preview.1.25081.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/7.0.16/10.0.0-preview.1.25081.1.json 264ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/10.0.0-preview.2.25163.8/11.0.0-preview.2.26159.112.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/10.0.0-preview.2.25163.8/11.0.0-preview.2.26159.112.json 331ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json 389ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/10.0.5/microsoft.entityframeworkcore.tools.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/10.0.5/microsoft.entityframeworkcore.tools.10.0.5.nupkg 13ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json 424ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/10.0.5/microsoft.entityframeworkcore.design.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/10.0.5/microsoft.entityframeworkcore.design.10.0.5.nupkg 12ms
+info : Installed Microsoft.EntityFrameworkCore.Design 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.design\10.0.5 with content hash gm6f0cC2w/2tcd4GeZJqEMruTercpIJfO5sSAFLtqTqblDBHgAFk70xwshUIUVX4I6sZwdEUSd1YxoKFk1AL0w==.
+info : Installed Microsoft.EntityFrameworkCore.Tools 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.tools\10.0.5 with content hash maSlvKez/gwy88zoLXCafRh0gEFmakM7fnf6zEi6nyItp7A1Negmp/YBodiuWcxLUguvVkPJZX15MnLeuJwjQA==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+error: NU1202: Package Microsoft.EntityFrameworkCore.Design 10.0.5 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.EntityFrameworkCore.Design 10.0.5 supports: net10.0 (.NETCoreApp,Version=v10.0)
+error: Package 'Microsoft.EntityFrameworkCore.Tools' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package StackExchange.Redis
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmp1i0t4z.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'StackExchange.Redis' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/index.json 617ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.0.187/1.2.4.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.0.187/1.2.4.json 524ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.2.5/2.2.88.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.2.5/2.2.88.json 437ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/2.5.27-prerelease/2.12.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/2.5.27-prerelease/2.12.1.json 293ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/stackexchange.redis/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/stackexchange.redis/index.json 379ms
+info :   GET https://api.nuget.org/v3-flatcontainer/stackexchange.redis/2.12.1/stackexchange.redis.2.12.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/stackexchange.redis/2.12.1/stackexchange.redis.2.12.1.nupkg 15ms
+info :   GET https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.hashing/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.hashing/index.json 303ms
+info :   OK https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/index.json 305ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.hashing/10.0.2/system.io.hashing.10.0.2.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg 15ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.pipelines/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.hashing/10.0.2/system.io.hashing.10.0.2.nupkg 42ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.pipelines/index.json 364ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg 17ms
+info : Installed System.IO.Pipelines 5.0.1 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.io.pipelines\5.0.1 with content hash qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==.
+info : Installed System.IO.Hashing 10.0.2 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.io.hashing\10.0.2 with content hash AKJknIFi9O3+rGExxTry188JPvUoZAPcCtS2qdqyFhIzsxQ1Ap94BeGDG0VzVEHakhmRxmJtVih6TsHoghIt/g==.
+info : Installed Pipelines.Sockets.Unofficial 2.2.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\pipelines.sockets.unofficial\2.2.8 with content hash zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==.
+info : Installed StackExchange.Redis 2.12.1 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\stackexchange.redis\2.12.1 with content hash IHxJWFM3b4g2Jrp0y7W8r27ODW6v+9oW5voJA4UNNxy0Dshn/lKqAL08kbfDKlRgB3gZFGmUX/u/mHq+mVfvwQ==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'StackExchange.Redis' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.     
+info : PackageReference for package 'StackExchange.Redis' version '2.12.1' added to file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\QuantityMeasurement.Infrastructure.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json 
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 1.78 sec).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.Extensions.Caching.StackExchangeRedis
+
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpddj3l4.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.Extensions.Caching.StackExchangeRedis' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/index.json 606ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/2.2.0-preview3-35497/5.0.0.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/2.2.0-preview3-35497/5.0.0.json 267ms      
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/5.0.1/7.0.10.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/5.0.1/7.0.10.json 286ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/7.0.11/9.0.10.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/7.0.11/9.0.10.json 296ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/9.0.11/11.0.0-preview.2.26159.112.json    
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/9.0.11/11.0.0-preview.2.26159.112.json 282ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.stackexchangeredis/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.stackexchangeredis/index.json 458ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.stackexchangeredis/10.0.5/microsoft.extensions.caching.stackexchangeredis.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.stackexchangeredis/10.0.5/microsoft.extensions.caching.stackexchangeredis.10.0.5.nupkg 285ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json 271ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/10.0.5/microsoft.extensions.caching.abstractions.10.0.5.nupkg   
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json 285ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/10.0.5/microsoft.extensions.caching.abstractions.10.0.5.nupkg 14ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json 288ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.5/microsoft.extensions.logging.abstractions.10.0.5.nupkg   
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/10.0.5/microsoft.extensions.options.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.5/microsoft.extensions.logging.abstractions.10.0.5.nupkg 13ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/10.0.5/microsoft.extensions.options.10.0.5.nupkg 14ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json 361ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.5/microsoft.extensions.primitives.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.5/microsoft.extensions.primitives.10.0.5.nupkg 14ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json 471ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json 474ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.5/microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/10.0.5/system.diagnostics.diagnosticsource.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/10.0.5/system.diagnostics.diagnosticsource.10.0.5.nupkg 11ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.5/microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg 15ms
+info : Installed Microsoft.Extensions.Caching.StackExchangeRedis 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.caching.stackexchangeredis\10.0.5 with content hash zXb143/TpEKOLQuWGw2CkJgb9F4XXh2XbevMvppzsIHr1/pjML0zjc+vzXcpCV8YUwpW5NIaScZhzFSm621B3Q==.
+info : Installed Microsoft.Extensions.Caching.Abstractions 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.caching.abstractions\10.0.5 with content hash k/QDdQ94/0Shi0KfU+e12m73jfQo+3JpErTtgpZfsCIqkvdEEO0XIx6R+iTbN55rNPaNhOqNY4/sB+jZ8XxVPw==.
+info : Installed Microsoft.Extensions.Primitives 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.primitives\10.0.5 with content hash /HUHJ0tw/LQvD0DZrz50eQy/3z7PfX7WWEaXnjKTV9/TNdcgFlNTZGo49QhS7PTmhDqMyHRMqAXSBxLh0vso4g==.
+info : Installed System.Diagnostics.DiagnosticSource 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.diagnostics.diagnosticsource\10.0.5 with content hash CCbzHQ26L3jskdwHh+4bxxW84lUMIrAAmeSlpO69AlrQV0DKbj1/I+feLaLSuZeqXPr9UlSy0OcgZoXOk2a6/g==.
+info : Installed Microsoft.Extensions.DependencyInjection.Abstractions 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\10.0.5 with content hash iVMtq9eRvzyhx8949EGT0OCYJfXi737SbRVzWXE5GrOgGj5AaZ9eUuxA/BSUfmOMALKn/g8KfFaNQw0eiB3lyA==.
+info : Installed Microsoft.Extensions.Options 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.options\10.0.5 with content hash MDaQMdUplw0AIRhWWmbLA7yQEXaLIHb+9CTroTiNS8OlI0LMXS4LCxtopqauiqGCWlRgJ+xyraVD8t6veRAFbw==.
+info : Installed Microsoft.Extensions.Logging.Abstractions 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.logging.abstractions\10.0.5 with content hash 9HOdqlDtPptVcmKAjsQ/Nr5Rxfq6FMYLdhvZh1lVmeKR738qeYecQD7+ldooXf+u2KzzR1kafSphWngIM3C6ug==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'Microsoft.Extensions.Caching.StackExchangeRedis' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : PackageReference for package 'Microsoft.Extensions.Caching.StackExchangeRedis' version '10.0.5' added to file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\QuantityMeasurement.Infrastructure.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json 
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 2.63 sec).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>
+
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet remove package Microsoft.EntityFrameworkCore
+info : Removing PackageReference for package 'Microsoft.EntityFrameworkCore' from project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+error: Project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj' does not contain any PackageReference 'Microsoft.EntityFrameworkCore' to Remove.      
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet remove package Microsoft.EntityFrameworkCore.SqlServer
+info : Removing PackageReference for package 'Microsoft.EntityFrameworkCore.SqlServer' from project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'. 
+error: Project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj' does not contain any PackageReference 'Microsoft.EntityFrameworkCore.SqlServer' to Remove.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet remove package Microsoft.EntityFrameworkCore.Tools
+info : Removing PackageReference for package 'Microsoft.EntityFrameworkCore.Tools' from project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.     
+error: Project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj' does not contain any PackageReference 'Microsoft.EntityFrameworkCore.Tools' to Remove.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworCore --version 8.0.8
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpxjsp2d.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworCore' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworcore/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworcore/index.json 546ms
+error: NU1101: Unable to find package Microsoft.EntityFrameworCore. No packages exist with this id in source(s): nuget.org
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+error: Package 'Microsoft.EntityFrameworCore' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.      
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworCore --version 8.0.0
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmphn32q0.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworCore' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworcore/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworcore/index.json 454ms
+error: NU1101: Unable to find package Microsoft.EntityFrameworCore. No packages exist with this id in source(s): nuget.org
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+error: Package 'Microsoft.EntityFrameworCore' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.      
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmp1x2smd.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json 318ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/0.0.1-alpha/3.1.2.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/0.0.1-alpha/3.1.2.json 262ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/3.1.3/6.0.0-preview.6.21352.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/3.1.3/6.0.0-preview.6.21352.1.json 305ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/6.0.0-preview.7.21378.4/7.0.17.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/6.0.0-preview.7.21378.4/7.0.17.json 249ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/7.0.18/10.0.0-preview.3.25171.6.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/7.0.18/10.0.0-preview.3.25171.6.json 250ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json  
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json 256ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json 291ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/10.0.5/microsoft.entityframeworkcore.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/10.0.5/microsoft.entityframeworkcore.10.0.5.nupkg 14ms
+info : Installed Microsoft.EntityFrameworkCore 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore\10.0.5 with content hash 9tNBmK3EpYVGRQLiqP+bqK2m+TD0Gv//4vCzR7ZOgl4FWzCFyOpYdIVka13M4kcBdPdSJcs3wbHr3rmzOqbIMA==.
+info :   GET https://api.nuget.org/v3/vulnerabilities/index.json
+info :   OK https://api.nuget.org/v3/vulnerabilities/index.json 261ms
+info :   GET https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   GET https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info :   OK https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json 370ms
+info :   OK https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json 367ms
+error: NU1202: Package Microsoft.EntityFrameworkCore 10.0.5 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.EntityFrameworkCore 10.0.5 supports: net10.0 (.NETCoreApp,Version=v10.0)
+error: Package 'Microsoft.EntityFrameworkCore' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.     
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpswnqp2.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore.SqlServer' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.   
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/index.json 503ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/0.0.1-alpha/3.1.2.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/0.0.1-alpha/3.1.2.json 351ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/3.1.3/6.0.0-preview.6.21352.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/3.1.3/6.0.0-preview.6.21352.1.json 246ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/6.0.0-preview.7.21378.4/7.0.17.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/6.0.0-preview.7.21378.4/7.0.17.json 258ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/7.0.18/10.0.0-preview.3.25171.6.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/7.0.18/10.0.0-preview.3.25171.6.json 292ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.sqlserver/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json 297ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/index.json 477ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/10.0.5/microsoft.entityframeworkcore.sqlserver.10.0.5.nupkg       
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/10.0.5/microsoft.entityframeworkcore.sqlserver.10.0.5.nupkg 12ms   
+info : Installed Microsoft.EntityFrameworkCore.SqlServer 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.sqlserver\10.0.5 with content hash /3Ault1Ay6OIEp3ZGGVem4mSWyEOX9e5leUMalGV9aFM57e0xFHAnlhmNaBHYtILkbtkaAErikQuaLqMQb4fww==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+error: NU1202: Package Microsoft.EntityFrameworkCore.SqlServer 10.0.5 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.EntityFrameworkCore.SqlServer 10.0.5 supports: net10.0 (.NETCoreApp,Version=v10.0)
+error: Package 'Microsoft.EntityFrameworkCore.SqlServer' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore.Tools
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmp12sbfq.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore.Tools' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.       
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/index.json 617ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/1.0.0-msbuild1-final/3.1.0.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/1.0.0-msbuild1-final/3.1.0.json 941ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/3.1.1/6.0.0-preview.4.21253.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/3.1.1/6.0.0-preview.4.21253.1.json 353ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/6.0.0-preview.5.21301.9/7.0.15.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/6.0.0-preview.5.21301.9/7.0.15.json 245ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/7.0.16/10.0.0-preview.1.25081.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/7.0.16/10.0.0-preview.1.25081.1.json 264ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/10.0.0-preview.2.25163.8/11.0.0-preview.2.26159.112.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore.tools/page/10.0.0-preview.2.25163.8/11.0.0-preview.2.26159.112.json 331ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json 389ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/10.0.5/microsoft.entityframeworkcore.tools.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/10.0.5/microsoft.entityframeworkcore.tools.10.0.5.nupkg 13ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json 424ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/10.0.5/microsoft.entityframeworkcore.design.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/10.0.5/microsoft.entityframeworkcore.design.10.0.5.nupkg 12ms
+info : Installed Microsoft.EntityFrameworkCore.Design 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.design\10.0.5 with content hash gm6f0cC2w/2tcd4GeZJqEMruTercpIJfO5sSAFLtqTqblDBHgAFk70xwshUIUVX4I6sZwdEUSd1YxoKFk1AL0w==.
+info : Installed Microsoft.EntityFrameworkCore.Tools 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.tools\10.0.5 with content hash maSlvKez/gwy88zoLXCafRh0gEFmakM7fnf6zEi6nyItp7A1Negmp/YBodiuWcxLUguvVkPJZX15MnLeuJwjQA==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+error: NU1202: Package Microsoft.EntityFrameworkCore.Design 10.0.5 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.EntityFrameworkCore.Design 10.0.5 supports: net10.0 (.NETCoreApp,Version=v10.0)
+error: Package 'Microsoft.EntityFrameworkCore.Tools' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package StackExchange.Redis
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmp1i0t4z.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'StackExchange.Redis' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/index.json 617ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.0.187/1.2.4.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.0.187/1.2.4.json 524ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.2.5/2.2.88.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.2.5/2.2.88.json 437ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/2.5.27-prerelease/2.12.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/2.5.27-prerelease/2.12.1.json 293ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/stackexchange.redis/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/stackexchange.redis/index.json 379ms
+info :   GET https://api.nuget.org/v3-flatcontainer/stackexchange.redis/2.12.1/stackexchange.redis.2.12.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/stackexchange.redis/2.12.1/stackexchange.redis.2.12.1.nupkg 15ms
+info :   GET https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.hashing/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.hashing/index.json 303ms
+info :   OK https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/index.json 305ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.hashing/10.0.2/system.io.hashing.10.0.2.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg 15ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.pipelines/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.hashing/10.0.2/system.io.hashing.10.0.2.nupkg 42ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.pipelines/index.json 364ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg 17ms
+info : Installed System.IO.Pipelines 5.0.1 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.io.pipelines\5.0.1 with content hash qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==.
+info : Installed System.IO.Hashing 10.0.2 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.io.hashing\10.0.2 with content hash AKJknIFi9O3+rGExxTry188JPvUoZAPcCtS2qdqyFhIzsxQ1Ap94BeGDG0VzVEHakhmRxmJtVih6TsHoghIt/g==.
+info : Installed Pipelines.Sockets.Unofficial 2.2.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\pipelines.sockets.unofficial\2.2.8 with content hash zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==.
+info : Installed StackExchange.Redis 2.12.1 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\stackexchange.redis\2.12.1 with content hash IHxJWFM3b4g2Jrp0y7W8r27ODW6v+9oW5voJA4UNNxy0Dshn/lKqAL08kbfDKlRgB3gZFGmUX/u/mHq+mVfvwQ==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'StackExchange.Redis' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.     
+info : PackageReference for package 'StackExchange.Redis' version '2.12.1' added to file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\QuantityMeasurement.Infrastructure.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json 
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 1.78 sec).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.Extensions.Caching.StackExchangeRedis
+
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpddj3l4.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.Extensions.Caching.StackExchangeRedis' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/index.json 606ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/2.2.0-preview3-35497/5.0.0.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/2.2.0-preview3-35497/5.0.0.json 267ms      
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/5.0.1/7.0.10.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/5.0.1/7.0.10.json 286ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/7.0.11/9.0.10.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/7.0.11/9.0.10.json 296ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/9.0.11/11.0.0-preview.2.26159.112.json    
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/9.0.11/11.0.0-preview.2.26159.112.json 282ms
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.stackexchangeredis/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.stackexchangeredis/index.json 458ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.stackexchangeredis/10.0.5/microsoft.extensions.caching.stackexchangeredis.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.stackexchangeredis/10.0.5/microsoft.extensions.caching.stackexchangeredis.10.0.5.nupkg 285ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json 271ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/10.0.5/microsoft.extensions.caching.abstractions.10.0.5.nupkg   
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json 285ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/10.0.5/microsoft.extensions.caching.abstractions.10.0.5.nupkg 14ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json 288ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.5/microsoft.extensions.logging.abstractions.10.0.5.nupkg   
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/10.0.5/microsoft.extensions.options.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.5/microsoft.extensions.logging.abstractions.10.0.5.nupkg 13ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/10.0.5/microsoft.extensions.options.10.0.5.nupkg 14ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json 361ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.5/microsoft.extensions.primitives.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.5/microsoft.extensions.primitives.10.0.5.nupkg 14ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json 471ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json 474ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.5/microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/10.0.5/system.diagnostics.diagnosticsource.10.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/10.0.5/system.diagnostics.diagnosticsource.10.0.5.nupkg 11ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.5/microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg 15ms
+info : Installed Microsoft.Extensions.Caching.StackExchangeRedis 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.caching.stackexchangeredis\10.0.5 with content hash zXb143/TpEKOLQuWGw2CkJgb9F4XXh2XbevMvppzsIHr1/pjML0zjc+vzXcpCV8YUwpW5NIaScZhzFSm621B3Q==.
+info : Installed Microsoft.Extensions.Caching.Abstractions 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.caching.abstractions\10.0.5 with content hash k/QDdQ94/0Shi0KfU+e12m73jfQo+3JpErTtgpZfsCIqkvdEEO0XIx6R+iTbN55rNPaNhOqNY4/sB+jZ8XxVPw==.
+info : Installed Microsoft.Extensions.Primitives 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.primitives\10.0.5 with content hash /HUHJ0tw/LQvD0DZrz50eQy/3z7PfX7WWEaXnjKTV9/TNdcgFlNTZGo49QhS7PTmhDqMyHRMqAXSBxLh0vso4g==.
+info : Installed System.Diagnostics.DiagnosticSource 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.diagnostics.diagnosticsource\10.0.5 with content hash CCbzHQ26L3jskdwHh+4bxxW84lUMIrAAmeSlpO69AlrQV0DKbj1/I+feLaLSuZeqXPr9UlSy0OcgZoXOk2a6/g==.
+info : Installed Microsoft.Extensions.DependencyInjection.Abstractions 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\10.0.5 with content hash iVMtq9eRvzyhx8949EGT0OCYJfXi737SbRVzWXE5GrOgGj5AaZ9eUuxA/BSUfmOMALKn/g8KfFaNQw0eiB3lyA==.
+info : Installed Microsoft.Extensions.Options 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.options\10.0.5 with content hash MDaQMdUplw0AIRhWWmbLA7yQEXaLIHb+9CTroTiNS8OlI0LMXS4LCxtopqauiqGCWlRgJ+xyraVD8t6veRAFbw==.
+info : Installed Microsoft.Extensions.Logging.Abstractions 10.0.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.extensions.logging.abstractions\10.0.5 with content hash 9HOdqlDtPptVcmKAjsQ/Nr5Rxfq6FMYLdhvZh1lVmeKR738qeYecQD7+ldooXf+u2KzzR1kafSphWngIM3C6ug==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'Microsoft.Extensions.Caching.StackExchangeRedis' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : PackageReference for package 'Microsoft.Extensions.Caching.StackExchangeRedis' version '10.0.5' added to file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\QuantityMeasurement.Infrastructure.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json 
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 2.63 sec).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet remove package Microsoft.EntityFrameworkCore
+info : Removing PackageReference for package 'Microsoft.EntityFrameworkCore' from project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+error: Project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj' does not contain any PackageReference 'Microsoft.EntityFrameworkCore' to Remove.      
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet remove package Microsoft.EntityFrameworkCore.SqlServer
+info : Removing PackageReference for package 'Microsoft.EntityFrameworkCore.SqlServer' from project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'. 
+error: Project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj' does not contain any PackageReference 'Microsoft.EntityFrameworkCore.SqlServer' to Remove.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet remove package Microsoft.EntityFrameworkCore.Tools
+info : Removing PackageReference for package 'Microsoft.EntityFrameworkCore.Tools' from project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.     
+error: Project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj' does not contain any PackageReference 'Microsoft.EntityFrameworkCore.Tools' to Remove.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworCore --version 8.0.8
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpxjsp2d.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworCore' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworcore/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworcore/index.json 546ms
+error: NU1101: Unable to find package Microsoft.EntityFrameworCore. No packages exist with this id in source(s): nuget.org
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+error: Package 'Microsoft.EntityFrameworCore' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.      
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworCore --version 8.0.0
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmphn32q0.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworCore' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworcore/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworcore/index.json 454ms
+error: NU1101: Unable to find package Microsoft.EntityFrameworCore. No packages exist with this id in source(s): nuget.org
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+error: Package 'Microsoft.EntityFrameworCore' is incompatible with 'all' frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.      
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore --version 8.0.8
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmp1nvboe.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/8.0.8/microsoft.entityframeworkcore.8.0.8.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/8.0.8/microsoft.entityframeworkcore.8.0.8.nupkg 200ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/index.json 397ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/index.json 399ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/8.0.8/microsoft.entityframeworkcore.abstractions.8.0.8.nupkg   
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/8.0.8/microsoft.entityframeworkcore.analyzers.8.0.8.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/8.0.8/microsoft.entityframeworkcore.abstractions.8.0.8.nupkg 16ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/8.0.8/microsoft.entityframeworkcore.analyzers.8.0.8.nupkg 16ms     
+info : Installed Microsoft.EntityFrameworkCore.Abstractions 8.0.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.abstractions\8.0.8 with content hash 9mMQkZsfL1c2iifBD8MWRmwy59rvsVtR9NOezJj7+g1j4P7g49MJHd8k8faC/v7d5KuHkQ6KOQiSItvoRt9PXA==.
+info : Installed Microsoft.EntityFrameworkCore.Analyzers 8.0.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.analyzers\8.0.8 with content hash OlAXMU+VQgLz5y5/SBkLvAa9VeiR3dlJqgIebEEH2M2NGA3evm68/Tv7SLWmSxwnEAtA3nmDEZF2pacK6eXh4Q==.
+info : Installed Microsoft.EntityFrameworkCore 8.0.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore\8.0.8 with content hash iK+jrJzkfbIxutB7or808BPmJtjUEi5O+eSM7cLDwsyde6+3iOujCSfWnrHrLxY3u+EQrJD+aD8DJ6ogPA2Rtw==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'Microsoft.EntityFrameworkCore' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : PackageReference for package 'Microsoft.EntityFrameworkCore' version '8.0.8' added to file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.   
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\QuantityMeasurement.Infrastructure.csproj.nuget.g.props.
+info : Writing assets file to disk. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json 
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 1.45 sec).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.8
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpgpxtoy.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore.SqlServer' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.   
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/8.0.8/microsoft.entityframeworkcore.sqlserver.8.0.8.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/8.0.8/microsoft.entityframeworkcore.sqlserver.8.0.8.nupkg 184ms    
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json 247ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/8.0.8/microsoft.entityframeworkcore.relational.8.0.8.nupkg       
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/8.0.8/microsoft.entityframeworkcore.relational.8.0.8.nupkg 11ms   
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/index.json 325ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/5.1.5/microsoft.data.sqlclient.5.1.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/5.1.5/microsoft.data.sqlclient.5.1.5.nupkg 15ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient.sni.runtime/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/azure.identity/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg 55ms
+info :   OK https://api.nuget.org/v3-flatcontainer/azure.identity/index.json 259ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient.sni.runtime/index.json 260ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient.sni.runtime/5.1.1/microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/azure.identity/1.10.3/azure.identity.1.10.3.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient.sni.runtime/5.1.1/microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg 13ms
+info :   OK https://api.nuget.org/v3-flatcontainer/azure.identity/1.10.3/azure.identity.1.10.3.nupkg 14ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/index.json 294ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/index.json 295ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/4.56.0/microsoft.identity.client.4.56.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/index.json 295ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/6.35.0/microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/azure.core/index.json      
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/4.56.0/microsoft.identity.client.4.56.0.nupkg 16ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/6.35.0/microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg 20ms       
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg 24ms
+info :   OK https://api.nuget.org/v3-flatcontainer/azure.core/index.json 251ms
+info :   GET https://api.nuget.org/v3-flatcontainer/azure.core/1.35.0/azure.core.1.35.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/azure.core/1.35.0/azure.core.1.35.0.nupkg 16ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/index.json 891ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/4.56.0/microsoft.identity.client.extensions.msal.4.56.0.nupkg   
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/4.56.0/microsoft.identity.client.extensions.msal.4.56.0.nupkg 12ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.filesystem.accesscontrol/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.filesystem.accesscontrol/index.json 246ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.filesystem.accesscontrol/5.0.0/system.io.filesystem.accesscontrol.5.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.filesystem.accesscontrol/5.0.0/system.io.filesystem.accesscontrol.5.0.0.nupkg 18ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.accesscontrol/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.accesscontrol/index.json 257ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg 14ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/index.json 242ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg 12ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/index.json 263ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/index.json 272ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg 21ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg 30ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/index.json 311ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/index.json 315ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/6.35.0/microsoft.identitymodel.logging.6.35.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/6.35.0/microsoft.identitymodel.tokens.6.35.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/6.35.0/microsoft.identitymodel.tokens.6.35.0.nupkg 13ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/6.35.0/microsoft.identitymodel.logging.6.35.0.nupkg 20ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/index.json 258ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/6.35.0/microsoft.identitymodel.abstractions.6.35.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/6.35.0/microsoft.identitymodel.abstractions.6.35.0.nupkg 15ms
+info : Installed Azure.Identity 1.10.3 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\azure.identity\1.10.3 with content hash l1Xm2MWOF2Mzcwuarlw8kWQXLZk3UeB55aQXVyjj23aBfDwOZ3gu5GP2kJ6KlmZeZv2TCzw7x4L3V36iNr3gww==.
+info : Installed Microsoft.IdentityModel.Abstractions 6.35.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.identitymodel.abstractions\6.35.0 with content hash xuR8E4Rd96M41CnUSCiOJ2DBh+z+zQSmyrYHdYhD6K4fXBcQGVnRCFQ0efROUYpP+p0zC1BLKr0JRpVuujTZSg==.
+info : Installed Microsoft.IdentityModel.Protocols 6.35.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.identitymodel.protocols\6.35.0 with content hash BPQhlDzdFvv1PzaUxNSk+VEPwezlDEVADIKmyxubw7IiELK18uJ06RQ9QKKkds30XI+gDu9n8j24XQ8w7fjWcg==.
+info : Installed System.IdentityModel.Tokens.Jwt 6.35.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.identitymodel.tokens.jwt\6.35.0 with content hash yxGIQd3BFK7F6S62/7RdZk3C/mfwyVxvh6ngd1VYMBmbJ1YZZA9+Ku6suylVtso0FjI0wbElpJ0d27CdsyLpBQ==.
+info : Installed Microsoft.IdentityModel.Logging 6.35.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.identitymodel.logging\6.35.0 with content hash jePrSfGAmqT81JDCNSY+fxVWoGuJKt9e6eJ+vT7+quVS55nWl//jGjUQn4eFtVKt4rt5dXaleZdHRB9J9AJZ7Q==.
+info : Installed Microsoft.IdentityModel.Protocols.OpenIdConnect 6.35.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.identitymodel.protocols.openidconnect\6.35.0 with content hash LMtVqnECCCdSmyFoCOxIE5tXQqkOLrvGrL7OxHg41DIm1bpWtaCdGyVcTAfOQpJXvzND9zUKIN/lhngPkYR8vg==.       
+info : Installed Microsoft.NETCore.Platforms 5.0.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.netcore.platforms\5.0.0 with content hash VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==.
+info : Installed Microsoft.IdentityModel.JsonWebTokens 6.35.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.identitymodel.jsonwebtokens\6.35.0 with content hash 9wxai3hKgZUb4/NjdRKfQd0QJvtXKDlvmGMYACbEC8DFaicMFCFhQFZq9ZET1kJLwZahf2lfY5Gtcpsx8zYzbg==.
+info : Installed Microsoft.Identity.Client.Extensions.Msal 4.56.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.identity.client.extensions.msal\4.56.0 with content hash H12YAzEGK55vZ+QpxUzozhW8ZZtgPDuWvgA0JbdIR9UhMUplj29JhIgE2imuH8W2Nw9D8JKygR1uxRFtpSNcrg==.
+info : Installed Microsoft.EntityFrameworkCore.SqlServer 8.0.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.sqlserver\8.0.8 with content hash A2F52W+hnGqvprx37HcAnYnJv4QoFFdc9cxd/QGNSd1vCu1I0eAEKRd0r9KS3E5I5RRj/m9XJfYCyTdy1cdn5Q==.
+info : Installed Azure.Core 1.35.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\azure.core\1.35.0 with content hash hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==.  
+info : Installed Microsoft.Data.SqlClient.SNI.runtime 5.1.1 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.data.sqlclient.sni.runtime\5.1.1 with content hash wNGM5ZTQCa2blc9ikXQouybGiyMd6IHPVJvAlBEPtr6JepZEOYeDxGyprYvFVeOxlCXs7avridZQ0nYkHzQWCQ==.
+info : Installed Microsoft.IdentityModel.Tokens 6.35.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.identitymodel.tokens\6.35.0 with content hash RN7lvp7s3Boucg1NaNAbqDbxtlLj5Qeb+4uSS1TeK5FSBVM40P4DKaTKChT43sHyKfh7V0zkrMph6DdHvyA4bg==.
+info : Installed System.Diagnostics.DiagnosticSource 6.0.1 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.diagnostics.diagnosticsource\6.0.1 with content hash KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==.
+info : Installed Microsoft.EntityFrameworkCore.Relational 8.0.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.relational\8.0.8 with content hash 3WnrwdXxKg4L98cDx0lNEEau8U2lsfuBJCs0Yzht+5XVTmahboM7MukKfQHAzVsHUPszm6ci929S7Qas0WfVHA==.
+info : Installed System.IO.FileSystem.AccessControl 5.0.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.io.filesystem.accesscontrol\5.0.0 with content hash SxHB3nuNrpptVk+vZ/F+7OHEpoHUIKKMl02bUmYHQr1r+glbZQxs7pRtsf4ENO29TVm2TH3AEeep2fJcy92oYw==.
+info : Installed System.Security.AccessControl 5.0.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\system.security.accesscontrol\5.0.0 with content hash dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==.
+info : Installed Microsoft.Identity.Client 4.56.0 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.identity.client\4.56.0 with content hash rr4zbidvHy9r4NvOAs5hdd964Ao2A0pAeFBJKR95u1CJAVzbd1p6tPTXUZ+5ld0cfThiVSGvz6UHwY6JjraTpA==.
+info : Installed Microsoft.Data.SqlClient 5.1.5 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.data.sqlclient\5.1.5 with content hash 6kvhQjY5uBCdBccezFD2smfnpQjQ33cZtUZVrNvxlwoBu6uopM5INH6uSgLI7JRLtlQ3bMPwnhMq4kchsXeZ5w==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'Microsoft.EntityFrameworkCore.SqlServer' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : PackageReference for package 'Microsoft.EntityFrameworkCore.SqlServer' version '8.0.8' added to file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Writing assets file to disk. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json 
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 7.75 sec).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.8
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpnf0aqx.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore.Tools' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.       
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/8.0.8/microsoft.entityframeworkcore.tools.8.0.8.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/8.0.8/microsoft.entityframeworkcore.tools.8.0.8.nupkg 193ms
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/8.0.8/microsoft.entityframeworkcore.design.8.0.8.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/8.0.8/microsoft.entityframeworkcore.design.8.0.8.nupkg 44ms
+info : Installed Microsoft.EntityFrameworkCore.Design 8.0.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.design\8.0.8 with content hash MmQAMHdjZR8Iyn/FVQrh9weJQTn0HqtKa3vELS9ffQJat/qXgnTam9M9jqvePphjkYp5Scee+Hy+EJR4nmWmOA==.
+info : Installed Microsoft.EntityFrameworkCore.Tools 8.0.8 from https://api.nuget.org/v3/index.json to C:\Users\aksha\.nuget\packages\microsoft.entityframeworkcore.tools\8.0.8 with content hash wjDNbLJk86QpZt2JxJuNVzpBKIbEQsgcJYHGeIFTBuK6NEgvJvyxgneg059HfSJmTVdInZ61lTO4sJGCfFr7+w==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'Microsoft.EntityFrameworkCore.Tools' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : PackageReference for package 'Microsoft.EntityFrameworkCore.Tools' version '8.0.8' added to file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\QuantityMeasurement.Infrastructure.csproj.nuget.g.props.
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\QuantityMeasurement.Infrastructure.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json 
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 935 ms).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package Microsoft.Extensions.Caching.StackExchangeRedis
+
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpbs4c4a.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.Extensions.Caching.StackExchangeRedis' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/index.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/2.2.0-preview3-35497/5.0.0.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/5.0.1/7.0.10.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/7.0.11/9.0.10.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.caching.stackexchangeredis/page/9.0.11/11.0.0-preview.2.26159.112.json  
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'Microsoft.Extensions.Caching.StackExchangeRedis' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : PackageReference for package 'Microsoft.Extensions.Caching.StackExchangeRedis' version '10.0.5' updated in file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Assets file has not changed. Skipping assets file writing. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 331 ms).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>dotnet add package StackExchange.Redis
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpsdzmbr.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'StackExchange.Redis' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/index.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.0.187/1.2.4.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/1.2.5/2.2.88.json
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/page/2.5.27-prerelease/2.12.1.json
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj...
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info : Package 'StackExchange.Redis' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.     
+info : PackageReference for package 'StackExchange.Redis' version '2.12.1' updated in file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj'.
+info : Assets file has not changed. Skipping assets file writing. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\obj\project.assets.json
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj (in 300 ms).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Infrastructure>
+
+Active code page: 65001
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet ef
+Could not execute because the specified command or file was not found.
+Possible reasons for this include:
+  * You misspelled a built-in dotnet command.
+  * You intended to execute a .NET program, but dotnet-ef does not exist.
+  * You intended to run a global tool, but a dotnet-prefixed executable with this name could not be found on the PATH.
+  * You misspelled a built-in dotnet command.
+  * You intended to execute a .NET program, but dotnet-ef does not exist.      
+  * You intended to run a global tool, but a dotnet-prefixed executable with this name could not be found on the PATH.
+is name could not be found on the PATH.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet tool install --global dotnet -ef
+Unrecognized command or argument '-ef'.
+
+Description:
+  Install global or local tool. Local tools are added to manifest and restored.
+
+Usage:
+  dotnet tool install <packageId> [options]
+
+Arguments:
+  <PACKAGE_ID>  The NuGet Package Id of the tool to install.
+
+Options:
+  -g, --global                 Install the tool for the current user.
+  --local                      Install the tool and add to the local tool 
+                               manifest (default).
+  --tool-path <PATH>           The directory where the tool will be installed. 
+                               The directory will be created if it does not    
+                               exist.
+  --version <VERSION>          The version of the tool package to install.     
+  --configfile <FILE>          The NuGet configuration file to use.
+  --tool-manifest <PATH>       Path to the manifest file.
+  --add-source <SOURCE>        Add an additional NuGet package source to use   
+                               during installation.
+  --framework <FRAMEWORK>      The target framework to install the tool for.   
+  --prerelease                 Include pre-release packages.
+  --disable-parallel           Prevent restoring multiple projects in parallel.
+  --ignore-failed-sources      Treat package source failures as warnings.      
+  --no-cache                   Do not cache packages and http requests.        
+  --interactive                Allows the command to stop and wait for user    
+                               input or action (for example to complete        
+                               authentication).
+  -v, --verbosity <LEVEL>      Set the MSBuild verbosity level. Allowed values 
+                               are q[uiet], m[inimal], n[ormal], d[etailed],   
+                               and diag[nostic].
+  -a, --arch <arch>            The target architecture.
+  --create-manifest-if-needed  Create a tool manifest if one isn't found       
+                               during tool installation. For information on    
+                               how manifests are located, see
+                               https://aka.ms/dotnet/tools/create-manifest-if-n
+                               eeded
+  --allow-downgrade            Allow package downgrade when installing a .NET  
+                               tool package.
+  --allow-roll-forward         Allow a .NET tool to roll forward to newer      
+                               versions of the .NET runtime if the runtime it  
+                               targets isn't installed.
+  -?, -h, --help               Show command line help.
+
+
+
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet ef
+Could not execute because the specified command or file was not found.
+Possible reasons for this include:
+  * You misspelled a built-in dotnet command.
+  * You intended to execute a .NET program, but dotnet-ef does not exist.      
+  * You intended to run a global tool, but a dotnet-prefixed executable with this name could not be found on the PATH.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet tool install --global dotnet-ef 
+You can invoke the tool using the following command: dotnet-ef
+Tool 'dotnet-ef' (version '10.0.5') was successfully installed.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet-ef 
+
+                     _/\__       
+               ---==/    \\
+         ___  ___   |.    \|\
+        | __|| __|  |  )   \\\
+        | _| | _|   \_/ |  //|\\
+        |___||_|       /   \\\/\\
+
+Entity Framework Core .NET Command-line Tools 10.0.5
+
+Usage: dotnet ef [options] [command]
+
+Options:
+  --version        Show version information
+  -h|--help        Show help information
+  -v|--verbose     Show verbose output.
+  --no-color       Don't colorize output.
+  --prefix-output  Prefix output with level.
+
+Commands:
+  database    Commands to manage the database.
+  dbcontext   Commands to manage DbContext types.
+  migrations  Commands to manage migrations.
+
+Use "dotnet ef [command] --help" for more information about a command.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet ef migrations a
+dd InitialCreate\--project QuantityMeasurement.Infrastructure\--tartup-project 
+QuantityMeasurement.API
+No project was found. Change the current working directory or use the --project option.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet ef migrations add InitialCreate \
+No project was found. Change the current working directory or use the --project option.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>--project QuantityMeasurement.Infrastructure \
+'--project' is not recognized as an internal or external command,
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet ef migrations add InitialCreate --project QuantityMeasurement.Infrastructure --startup-project QuantityMeasurement.API
+Build started...
+Build succeeded.
+Your startup project 'QuantityMeasurement.API' doesn't reference Microsoft.EntityFrameworkCore.Design. This package is required for the Entity Framework Core Tools to work. Ensure your startup project is correct, install the package, and try again.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp><PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8" />
+The syntax of the command is incorrect.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add QuantityMeasurement.API package Microsoft.EntityFrameworkCore.Design --version 8.0.8
+  Determining projects to restore...
+  Writing C:\Users\aksha\AppData\Local\Temp\tmpigv3k4.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore.Design' into project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\QuantityMeasurement.API.csproj'.
+info : Restoring packages for C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\QuantityMeasurement.API.csproj...
+info :   GET https://api.nuget.org/v3/vulnerabilities/index.json
+info :   OK https://api.nuget.org/v3/vulnerabilities/index.json 705ms
+info :   GET https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json
+info :   GET https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json
+info :   OK https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/vulnerability.base.json 326ms
+info :   OK https://api.nuget.org/v3-vulnerabilities/2026.03.14.05.32.40/2026.03.14.05.32.40/vulnerability.update.json 322ms
+info : Package 'Microsoft.EntityFrameworkCore.Design' is compatible with all the specified frameworks in project 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\QuantityMeasurement.API.csproj'.
+info : PackageReference for package 'Microsoft.EntityFrameworkCore.Design' version '8.0.8' added to file 'C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\QuantityMeasurement.API.csproj'.
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\obj\QuantityMeasurement.API.csproj.nuget.g.props.
+info : Generating MSBuild file C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\obj\QuantityMeasurement.API.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\obj\project.assets.json
+log  : Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.API\QuantityMeasurement.API.csproj (in 1.55 sec).
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet ef migrations add InitialCreate --project QuantityMeasurement.Infrastructure --startup-project QuantityMeasurement.API
+Build started...
+Build succeeded.
+Done. To undo this action, use 'ef migrations remove'
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet ef database update --project QuantityMeasurement.Infrastructure --startup-project QuantityMeasurement.API
+Build started...
+Build succeeded.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 52 - Unable to locate a Local Database Runtime installation. Verify that SQL Server Express is properly installed and that the Local Database Runtime feature is enabled.)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)   
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()      
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.Design.Internal.MigrationsOperations.UpdateDatabase(String targetMigration, String connectionString, String contextType)  
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.UpdateDatabaseImpl(String targetMigration, String connectionString, String contextType)
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.UpdateDatabase.<>c__DisplayClass0_0.<.ctor>b__0()
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.OperationBase.Execute(Action action)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 52 - Unable to locate a Local Database Runtime installation. Verify that SQL Server Express is properly installed and that the Local Database Runtime feature is enabled.)
+Database(String targetMigration, String connectionString, String contextType)  
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.UpdateDatabaseImpl(String targetMigration, String connectionString, String contextType)
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.UpdateDatabase.<>c__DisplayClass0_0.<.ctor>b__0()
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.OperationBase.Execute(Action action)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 52 - Unable to locate a Local Database Runtime installation. Verify that SQL Server Express is properly installed and that the Local Database Runtime feature is enabled.)
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.UpdateDatabaseImpl(String targetMigration, String connectionString, String contextType)
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.UpdateDatabase.<>c__DisplayClass0_0.<.ctor>b__0()
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.OperationBase.Execute(Action action)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 52 - Unable to locate a Local Database Runtime installation. Verify that SQL Server Express is properly installed and that the Local Database Runtime feature is enabled.)
+   at Microsoft.EntityFrameworkCore.Design.OperationExecutor.OperationBase.Execute(Action action)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 52 - Unable to locate a Local Database Runtime installation. Verify that SQL Server Express is properly installed and that the Local Database Runtime feature is enabled.)
+at the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 52 - Unable to locate a Local Database Runtime installation. Verify that SQL Server Express is properly installed and that the Local Database Runtime feature is enabled.)
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet ef database update --project QuantityMeasurement.Infrastructure --startup-project QuantityMeasurement.API
+Build started...
+Build succeeded.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (305ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [QuantityMeasurementDB];
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (116ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [QuantityMeasurementDB] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [__EFMigrationsHistory] (
+          [MigrationId] nvarchar(150) NOT NULL,
+          [ProductVersion] nvarchar(32) NOT NULL,
+          CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])   
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]     
+      ORDER BY [MigrationId];
+info: Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '20260314100206_InitialCreate'.
+Applying migration '20260314100206_InitialCreate'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Histories] (       
+          [Id] uniqueidentifier NOT NULL,
+          [Operation] nvarchar(max) NOT NULL,
+          [Value1] float NOT NULL,     
+          [Unit1] nvarchar(max) NOT NULL,
+          [Value2] float NULL,
+          [Unit2] nvarchar(max) NULL,  
+          [TargetUnit] nvarchar(max) NULL,
+MARY KEY ([Id])
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])    
+      VALUES (N'20260314100206_InitialCreate', N'8.0.8');
+Done.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>
+Active code page: 65001
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add QuantityMeasurement.Application reference QuantityMeasurement.Infrastructure 
+Reference `..\QuantityMeasurement.Infrastructure\QuantityMeasurement.Infrastructure.csproj` added to the project.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>
+
+
+
+Microsoft Windows [Version 10.0.26200.8037]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>wsl --list --online
+The Windows Subsystem for Linux is not installed. You can install by running 'wsl.exe --install'.
+For more information please visit https://aka.ms/wslinstall
+
+Press any key to install Windows Subsystem for Linux.
+Press CTRL-C or close this window to cancel.
+This prompt will time out in 60 seconds.
+Operation aborted
+
+C:\Windows\System32>wsl --list --online
+The Windows Subsystem for Linux is not installed. You can install by running 'wsl.exe --install'.
+For more information please visit https://aka.ms/wslinstall
+
+Press any key to install Windows Subsystem for Linux.
+Press CTRL-C or close this window to cancel.
+This prompt will time out in 60 seconds.
+Downloading: Windows Subsystem for Linux 2.6.3
+Installing: Windows Subsystem for Linux 2.6.3
+Windows Subsystem for Linux 2.6.3 has been installed.
+The operation completed successfully.
+The following is a list of valid distributions that can be installed.
+Install using 'wsl.exe --install <Distro>'.
+
+NAME                            FRIENDLY NAME
+Ubuntu                          Ubuntu
+Ubuntu-24.04                    Ubuntu 24.04 LTS
+openSUSE-Tumbleweed             openSUSE Tumbleweed
+openSUSE-Leap-16.0              openSUSE Leap 16.0
+SUSE-Linux-Enterprise-15-SP7    SUSE Linux Enterprise 15 SP7
+SUSE-Linux-Enterprise-16.0      SUSE Linux Enterprise 16.0
+kali-linux                      Kali Linux Rolling
+Debian                          Debian GNU/Linux
+AlmaLinux-8                     AlmaLinux OS 8
+AlmaLinux-9                     AlmaLinux OS 9
+AlmaLinux-Kitten-10             AlmaLinux OS Kitten 10
+AlmaLinux-10                    AlmaLinux OS 10
+archlinux                       Arch Linux
+FedoraLinux-43                  Fedora Linux 43
+FedoraLinux-42                  Fedora Linux 42
+eLxr                            eLxr 12.12.0.0 GNU/Linux
+Ubuntu-20.04                    Ubuntu 20.04 LTS
+Ubuntu-22.04                    Ubuntu 22.04 LTS
+OracleLinux_7_9                 Oracle Linux 7.9
+OracleLinux_8_10                Oracle Linux 8.10
+OracleLinux_9_5                 Oracle Linux 9.5
+openSUSE-Leap-15.6              openSUSE Leap 15.6
+SUSE-Linux-Enterprise-15-SP6    SUSE Linux Enterprise 15 SP6
+
+C:\Windows\System32>wsl.exe --install
+Downloading: Ubuntu
+Installing: Ubuntu
+Distribution successfully installed. It can be launched via 'wsl.exe -d Ubuntu'
+Launching Ubuntu...
+Provisioning the new WSL instance Ubuntu
+This might take a while...
+Create a default Unix user account: akshay
+New password:
+Retype new password:
+passwd: password updated successfully
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ sudo apt update && sudo apt install redis-server -y
+[sudo] password for akshay:
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1538 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [246 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.6 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [10.5 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [976 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [219 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.1 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [20.8 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2677 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [622 kB]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [544 B]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [28.8 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [6732 B]
+Get:20 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:21 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [396 B]
+Get:22 http://archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1835 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [336 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [177 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [16.7 kB]
+Get:33 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1566 kB]
+Get:34 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [319 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [386 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [33.0 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2813 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [650 kB]
+Get:39 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:40 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [556 B]
+Get:41 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [32.1 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [7044 B]
+Get:43 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:44 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [496 B]
+Get:45 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [65.0 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9208 B]
+Get:47 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7364 B]
+Get:48 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [368 B]
+Get:49 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [34.2 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [18.3 kB]
+Get:51 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [13.1 kB]
+Get:52 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1480 B]
+Get:53 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:54 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:55 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [780 B]
+Get:56 http://archive.ubuntu.com/ubuntu noble-backports/multiverse Translation-en [372 B]
+Get:57 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:58 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 40.8 MB in 21s (1929 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+35 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  gcc-14-base libatomic1 libgcc-s1 libjemalloc2 liblzf1 libstdc++6 redis-tools
+Suggested packages:
+  ruby-redis
+The following NEW packages will be installed:
+  libatomic1 libjemalloc2 liblzf1 redis-server redis-tools
+The following packages will be upgraded:
+  gcc-14-base libgcc-s1 libstdc++6
+3 upgraded, 5 newly installed, 0 to remove and 32 not upgraded.
+Need to get 2413 kB of archives.
+After this operation, 7618 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-14-base amd64 14.2.0-4ubuntu2~24.04.1 [51.0 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libstdc++6 amd64 14.2.0-4ubuntu2~24.04.1 [792 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-s1 amd64 14.2.0-4ubuntu2~24.04.1 [78.4 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libatomic1 amd64 14.2.0-4ubuntu2~24.04.1 [10.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/universe amd64 libjemalloc2 amd64 5.3.0-2build1 [256 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/universe amd64 liblzf1 amd64 3.6-4 [7624 B]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 redis-tools amd64 5:7.0.15-1ubuntu0.24.04.2 [1166 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 redis-server amd64 5:7.0.15-1ubuntu0.24.04.2 [51.7 kB]
+Fetched 2413 kB in 2s (1173 kB/s)
+(Reading database ... 40805 files and directories currently installed.)
+Preparing to unpack .../gcc-14-base_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04.1) over (14.2.0-4ubuntu2~24.04) ...
+Setting up gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+(Reading database ... 40805 files and directories currently installed.)
+Preparing to unpack .../libstdc++6_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libstdc++6:amd64 (14.2.0-4ubuntu2~24.04.1) over (14.2.0-4ubuntu2~24.04) ...
+Setting up libstdc++6:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+(Reading database ... 40805 files and directories currently installed.)
+Preparing to unpack .../libgcc-s1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libgcc-s1:amd64 (14.2.0-4ubuntu2~24.04.1) over (14.2.0-4ubuntu2~24.04) ...
+Setting up libgcc-s1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libatomic1:amd64.
+(Reading database ... 40805 files and directories currently installed.)
+Preparing to unpack .../libatomic1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libatomic1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libjemalloc2:amd64.
+Preparing to unpack .../libjemalloc2_5.3.0-2build1_amd64.deb ...
+Unpacking libjemalloc2:amd64 (5.3.0-2build1) ...
+Selecting previously unselected package liblzf1:amd64.
+Preparing to unpack .../liblzf1_3.6-4_amd64.deb ...
+Unpacking liblzf1:amd64 (3.6-4) ...
+Selecting previously unselected package redis-tools.
+Preparing to unpack .../redis-tools_5%3a7.0.15-1ubuntu0.24.04.2_amd64.deb ...
+Unpacking redis-tools (5:7.0.15-1ubuntu0.24.04.2) ...
+Selecting previously unselected package redis-server.
+Preparing to unpack .../redis-server_5%3a7.0.15-1ubuntu0.24.04.2_amd64.deb ...
+Unpacking redis-server (5:7.0.15-1ubuntu0.24.04.2) ...
+Setting up libjemalloc2:amd64 (5.3.0-2build1) ...
+Setting up liblzf1:amd64 (3.6-4) ...
+Setting up libatomic1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up redis-tools (5:7.0.15-1ubuntu0.24.04.2) ...
+Setting up redis-server (5:7.0.15-1ubuntu0.24.04.2) ...
+Created symlink /etc/systemd/system/redis.service → /usr/lib/systemd/system/redis-server.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/redis-server.service → /usr/lib/systemd/system/redis-server.service.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ sudo service redis-server start
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ redis-cli ping
+PONG
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$
+
+Active code page: 65001
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet dev-certs https --trust
+Trusting the HTTPS development certificate was requested. A confirmation prompt will be displayed if the certificate was not previously trusted. Click yes on the prompt to trust the certificate.
+Successfully trusted the existing HTTPS certificate.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>
+
+Microsoft Windows [Version 10.0.26200.8037]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>wsl
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ sudo redis-server start
+[sudo] password for akshay:
+400:C 16 Mar 2026 13:30:43.196 # Fatal error, can't open config file '/mnt/c/Windows/System32/start': No such file or directory
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ sudo redis-server start
+403:C 16 Mar 2026 13:30:45.828 # Fatal error, can't open config file '/mnt/c/Windows/System32/start': No such file or directory
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ sudo service redis-server start
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ redis-ping
+redis-ping: command not found
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ redis-cli HGETALL "QuantityMeasurementApp:history:all"
+1) "sldexp"
+2) "-1"
+3) "data"
+4) "[{\"Id\":\"770b26f9-2021-4042-b267-4b834ed4a6ae\",\"Operation\":\"Add\",\"Value1\":10,\"Unit1\":\"Celsius\",\"Value2\":10,\"Unit2\":\"Kelvin\",\"TargetUnit\":\"Celsius\",\"Scalar\":null,\"Result\":-253.14999999999998,\"ResultUnit\":\"Celsius\",\"CreatedAt\":\"2026-03-16T13:32:51.8002399\"},{\"Id\":\"597286fd-ab9c-4969-9b20-31ff66ae12b5\",\"Operation\":\"Add\",\"Value1\":10,\"Unit1\":\"Celsius\",\"Value2\":10,\"Unit2\":\"Kelvin\",\"TargetUnit\":\"Celsius\",\"Scalar\":null,\"Result\":-253.14999999999998,\"ResultUnit\":\"Celsius\",\"CreatedAt\":\"2026-03-16T10:30:36.7224839\"},{\"Id\":\"dd26dcce-b4b5-455b-8f8f-1008cdf0cc82\",\"Operation\":\"Add\",\"Value1\":10,\"Unit1\":\"Celsius\",\"Value2\":10,\"Unit2\":\"Kelvin\",\"TargetUnit\":\"Celsius\",\"Scalar\":null,\"Result\":-253.14999999999998,\"ResultUnit\":\"Celsius\",\"CreatedAt\":\"2026-03-16T10:28:52.5677788\"},{\"Id\":\"47d26800-92ce-4c90-85bb-d960e4ff8c74\",\"Operation\":\"Convert\",\"Value1\":1,\"Unit1\":\"Meter\",\"Value2\":null,\"Unit2\":null,\"TargetUnit\":\"Feet\",\"Scalar\":null,\"Result\":3.28084,\"ResultUnit\":\"Feet\",\"CreatedAt\":\"2026-03-16T07:09:44.5945752\"}]"
+5) "absexp"
+6) "639092665898782005"
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$ redis-cli ping
+PONG
+akshay@DESKTOP-5Q6HLKC:/mnt/c/Windows/System32$
+
+Active code page: 65001
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet new console -n QuantityMeasurement.Console 
+The template "Console App" was created successfully.
+
+Processing post-creation actions...
+Restoring C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMeasurement.Console\QuantityMeasurement.Console.csproj:
+  Determining projects to restore...
+  Restored C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp\QuantityMe
+  asurement.Console\QuantityMeasurement.Console.csproj (in 112 ms).
+Restore succeeded.
+
+Using This sttament to get trusted Https certificate for localhost development as NEt SDK will create a developement HTTPS certificate and installs it. and this is global so cna be run from anywhere
+dotnet dev-certs https --trust
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasuremenC:\Users\aksha\OneDrive\DoctApp>dotnet add  QuantityMeasurement.Console\QuantityMeasurement.Console.csproj reference QuantityMeasurement.Domain\QuantityMeasurement.Domain\QuantityMeasurement.Domain.csproj
+Could not find project or directory `QuantityMeasurement.Domain\QuantityMeasurement.Domain\QuantityMeasurement.Domain.csproj`.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add  QuantityMeasurement.Console\QuantityMeasurement.Console.csproj reference QuantityMeasurement.Domain\QuantityMeasurement.Domain.csproj
+Could not find project or directory `QuantityMeasurement.Domain\QuantityMeasurement.Domain.csproj`.
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>dotnet add  QuantityMeasurement.Console\QuantityMeasurement.Console.csproj reference Domain\QuantityMeasurement.Domain.csproj
+Reference `..\Domain\QuantityMeasurement.Domain.csproj` added to the project.  
+
+C:\Users\aksha\OneDrive\Documents\QuantityMeasurementApp>
