@@ -1,0 +1,59 @@
+flowchart TD
+    subgraph "Presentation Layer"
+        API[API Layer<br/>Controllers<br/>Middleware<br/>Auth]
+        Console[Console Layer<br/>Menu<br/>Factory Pattern]
+    end
+    
+    subgraph "Application Layer"
+        Services[Application Services<br/>IQuantityService<br/>DTOs<br/>Business Logic]
+    end
+    
+    subgraph "Infrastructure Layer"
+        Infra[Infrastructure<br/>Repositories<br/>DbContext<br/>Auth Service<br/>Redis Cache]
+    end
+    
+    subgraph "Domain Layer"
+        Domain[Domain<br/>Quantity Classes<br/>Unit Definitions<br/>IQuantity Interface]
+    end
+    
+    subgraph "Data Layer"
+        DB[(SQL Server<br/>Database)]
+        Cache[(Redis<br/>Cache)]
+    end
+    
+    subgraph "External"
+        Client[Client<br/>HTTP Requests]
+        User[User<br/>Console Input]
+    end
+    
+    %% API Flow
+    Client -->|HTTP POST<br/>QuantityRequestDto| API
+    API -->|JWT Auth<br/>Rate Limiting| API
+    API -->|IQuantityService.Convert/Add/etc.<br/>QuantityRequestDto| Services
+    Services -->|Create Quantity objects<br/>from DTO| Domain
+    Domain -->|Business Logic<br/>Convert/Add/Subtract| Domain
+    Domain -->|Result Quantity| Services
+    Services -->|HistoryRecord| Infra
+    Infra -->|Save to DB<br/>Cache Invalidation| DB
+    Infra -->|Cache History<br/>30min TTL| Cache
+    Services -->|QuantityResultDto| API
+    API -->|HTTP 200<br/>JSON Response| Client
+    
+    %% Console Flow
+    User -->|Menu Selection<br/>Input Values| Console
+    Console -->|Create Quantity<br/>Direct Instantiation| Domain
+    Domain -->|Operations<br/>Convert/Add/etc.| Domain
+    Domain -->|Results| Console
+    Console -->|Display to User| User
+    
+    %% Dependencies (project references)
+    API -.->|Depends on| Services
+    API -.->|Depends on| Infra
+    Services -.->|Depends on| Domain
+    Services -.->|Depends on| Infra
+    Infra -.->|Depends on| Domain
+    Console -.->|Depends on| Domain
+    
+    %% Infrastructure connections
+    Infra -->|EF Core| DB
+    Infra -->|StackExchange.Redis| Cache
