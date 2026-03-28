@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "opAYqfiCckJ6JLrJd0uv+IDOAOVZUTNrzG65ZxCgfCQ=",
+  "Source": "QuantityMeasurement.API",
+  "BasePath": "_content/QuantityMeasurement.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
